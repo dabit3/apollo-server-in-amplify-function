@@ -1,0 +1,15 @@
+{
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-fs-apollo-dev-124936-authRole",
+            "UnauthRoleArn": "arn:aws:iam::557458351015:role/amplify-fs-apollo-dev-124936-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::557458351015:role/amplify-fs-apollo-dev-124936-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "amplify-fs-apollo-dev-124936-deployment",
+            "UnauthRoleName": "amplify-fs-apollo-dev-124936-unauthRole",
+            "StackName": "amplify-fs-apollo-dev-124936",
+            "StackId": "arn:aws:cloudformation:us-east-1:557458351015:stack/amplify-fs-apollo-dev-124936/195e03e0-751b-11ea-a3d0-12c5c4f78283",
+            "AmplifyAppId": "d22wriyu4ifbcz"
+        }
+    }
+}
