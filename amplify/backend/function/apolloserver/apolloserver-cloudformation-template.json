@@ -62,8 +62,8 @@
 				"Runtime": "nodejs12.x",
 				"Timeout": "25",
 				"Code": {
-					"S3Bucket": "amplify-fs-apollo-dev-124936-deployment",
-					"S3Key": "amplify-builds/apolloserver-706a6f6142374a413246-build.zip"
+					"S3Bucket": "amplify-fs-apollo-dev-144656-deployment",
+					"S3Key": "amplify-builds/apolloserver-4d796c45586b48634e45-build.zip"
 				}
 			}
 		},
@@ -73,12 +73,12 @@
 				"RoleName": {
 					"Fn::If": [
 						"ShouldNotCreateEnvResources",
-						"fsapolloLambdaRole6243f6cf",
+						"fsapolloLambdaRole08c7310d",
 						{
 							"Fn::Join": [
 								"",
 								[
-									"fsapolloLambdaRole6243f6cf",
+									"fsapolloLambdaRole08c7310d",
 									"-",
 									{
 										"Ref": "env"

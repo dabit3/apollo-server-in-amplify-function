@@ -8,8 +8,8 @@
             }
         }
     ],
-    "resourceName": "api81ecb1a6",
-    "apiName": "api81ecb1a6",
+    "resourceName": "apolloapi",
+    "apiName": "apolloapi",
     "functionArns": [
         {
             "lambdaFunction": "apolloserver"
@@ -18,8 +18,8 @@
     "privacy": {
         "auth": 0,
         "unauth": 0,
-        "authRoleName": "amplify-fs-apollo-dev-124936-authRole",
-        "unAuthRoleName": "amplify-fs-apollo-dev-124936-unauthRole"
+        "authRoleName": "amplify-fs-apollo-dev-144656-authRole",
+        "unAuthRoleName": "amplify-fs-apollo-dev-144656-unauthRole"
     },
     "dependsOn": [
         {

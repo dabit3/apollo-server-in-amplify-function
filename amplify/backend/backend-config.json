@@ -7,7 +7,7 @@
 		}
 	},
 	"api": {
-		"api81ecb1a6": {
+		"apolloapi": {
 			"service": "API Gateway",
 			"providerPlugin": "awscloudformation",
 			"dependsOn": [

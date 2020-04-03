@@ -45,16 +45,16 @@
         
         
         
-      "api81ecb1a6": {
+      "apolloapi": {
         "Type": "AWS::ApiGateway::RestApi",
         "Properties": {
           "Description": "",
-          "Name": "api81ecb1a6",
+          "Name": "apolloapi",
           "Body": {
             "swagger": "2.0",
             "info": {
               "version": "2018-05-24T17:52:00Z",
-              "title": "api81ecb1a6"
+              "title": "apolloapi"
             },
             "host": {
                 "Fn::Join": [
@@ -332,7 +332,7 @@
                   
         
         
-        "functionapolloserverPermissionapi81ecb1a6": {
+        "functionapolloserverPermissionapolloapi": {
             "Type": "AWS::Lambda::Permission",
             "Properties": {
                 "FunctionName": 
@@ -356,7 +356,7 @@
                             },
                             ":",
                             {
-                                "Ref": "api81ecb1a6"
+                                "Ref": "apolloapi"
                             },
                             "/*/*/*"
                         ]
@@ -367,7 +367,7 @@
         
         
         
-      "DeploymentAPIGWapi81ecb1a6": {
+      "DeploymentAPIGWapolloapi": {
         "Type": "AWS::ApiGateway::Deployment",
         "Properties": {
           "Description": "The Development stage deployment of your API.",
@@ -381,7 +381,7 @@
             ]
           },
           "RestApiId": {
-            "Ref": "api81ecb1a6"
+            "Ref": "apolloapi"
           }
         }
       }
@@ -389,15 +389,15 @@
     "Outputs": {
         "RootUrl": {
             "Description": "Root URL of the API gateway",
-            "Value": {"Fn::Join": ["", ["https://", {"Ref": "api81ecb1a6"}, ".execute-api.", {"Ref": "AWS::Region"}, ".amazonaws.com/", {"Fn::If": ["ShouldNotCreateEnvResources","Prod", {"Ref": "env"} ]}]]}
+            "Value": {"Fn::Join": ["", ["https://", {"Ref": "apolloapi"}, ".execute-api.", {"Ref": "AWS::Region"}, ".amazonaws.com/", {"Fn::If": ["ShouldNotCreateEnvResources","Prod", {"Ref": "env"} ]}]]}
         },
         "ApiName": {
           "Description": "API Friendly name",
-          "Value": "api81ecb1a6"
+          "Value": "apolloapi"
         },
         "ApiId": {
           "Description": "API ID (prefix of API URL)",
-          "Value": {"Ref": "api81ecb1a6"}
+          "Value": {"Ref": "apolloapi"}
         }
     }
   }
