@@ -8,10 +8,7 @@ import config from './aws-exports'
 
 const { endpoint } = config.aws_cloud_logic_custom[0]
 
-const query = gql`{
-    hello
-  }
-`;
+const query = gql`{ hello }`;
 
 function App() {
   const { loading, error, data } = useQuery(query);
