@@ -22,10 +22,12 @@ $ cd apollo-server-in-amplify-function
 $ npm install
 ```
 
-2. Initialize the Amplify back end
+2. Initialize and deploy the Amplify back end
 
 ```sh
 $ amplify init
+
+$ amplify push --y
 ```
 
 3. Run the app
