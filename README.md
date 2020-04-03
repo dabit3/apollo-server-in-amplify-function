@@ -6,7 +6,7 @@ There are two options to follow along with this example. You can either create t
 
 ## Tutorial
 
-To create this from scratch, please see the dev.to tutorial [here]().
+To create this from scratch, please see the dev.to tutorial [here](https://dev.to/aws/10-minute-tutorial-deploy-an-apollo-graphql-server-with-amplify-functions-38p1).
 
 ## Deploy this project
 
